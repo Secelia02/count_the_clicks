@@ -14,10 +14,12 @@ let increaseEl = document.getElementById("increase-el");
 function increment() {
   count += 1;
   increaseEl.innerText = count;
+
 }
 let saveEl = document.getElementById("save-el");
 
 function save() {
   savedCount = ` ${count} - `; 
   saveEl.innerText += savedCount;
+  count = 0;
 }
